@@ -2,4 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg {
+    background-image: url('./Images/Oulu_logo.jpg');
 
+    background-size: cover;
+}
+
+.title-bg-blur {
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    background-blend-mode: darken;
+    backdrop-filter: brightness(.5);
+    
+}

@@ -1,12 +1,16 @@
-import Image from 'next/image'
-
+import image from './Images/Oulu_logo.jpg'
 export default async function Home() {
   let carParks = await fetchData();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-10 font-bold">
-      
-      <h1 className='text-2xl'> Kaikki vapaana olevat paikat </h1>
+    <main>
+    
+      <div class="bg"> 
+        <div class="title-bg-blur">
+            <h1 className='text-4xl text-center justify-content p-24 text-white font-bold '> Oulun Kaupungin Pysäköintitilastot Kohteittain 
+          
+            </h1>
+        </div>
 
     <ul className='grid grid-cols-6 gap-4 flex min-h-screen flex-col items-center justify-content'> 
         {carParks.map((carPark) =>
@@ -17,7 +21,7 @@ export default async function Home() {
         </li>
         )}
     </ul>
-
+    </div>
     </main>
   )
  }
